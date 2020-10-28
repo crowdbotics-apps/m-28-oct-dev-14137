@@ -50,11 +50,15 @@ export default class Blank extends React.Component {
           onPress={nextChecked => this.setState({ CheckBox_4: nextChecked })}
         />
       </TouchableOpacity>
-      <TextInput
-        placeholder="Number Input Placeholder"
-        value={this.state.TextInput_5}
-        onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
-      />
+      <TouchableOpacity
+        onPress={() => this.props.navigation.navigate("BlankScreen113356")}
+      >
+        <TextInput
+          placeholder="Number Input Placeholder"
+          value={this.state.TextInput_5}
+          onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
+        />
+      </TouchableOpacity>
     </View>
   )
 }
@@ -65,6 +69,11 @@ const styles = StyleSheet.create({
     marginHorizontal: 16
   },
 
+  View_1: {},
+  Button_2: {},
+  Switch_3: {},
+  CheckBox_4: {},
+  TextInput_5: {},
   View_1: {},
   Button_2: {},
   Switch_3: {},
