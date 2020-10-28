@@ -5,7 +5,7 @@ const newConnectorklklk = axios.create({
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 const moctAPI = axios.create({
-  baseURL: "https://m-28-oct-dev-14137-prod.herokuapp.com/",
+  baseURL: "https://m-28-oct-dev-14137.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_v1_customtext_list(action) {
