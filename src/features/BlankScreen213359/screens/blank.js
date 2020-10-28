@@ -27,8 +27,15 @@ export default class Blank extends React.Component {
 
   render = () => (
     <View>
-      <Button title="Press me!" onPress={() => alert("Pressed!")} />
-      <Text>Sample text content</Text>
+      <Button
+        title="Press me!"
+        onPress={() => this.props.navigation.navigate("BlankScreen113358")}
+      />
+      <TouchableOpacity
+        onPress={() => this.props.navigation.navigate("BlankScreen113358")}
+      >
+        <Text>Sample text content</Text>
+      </TouchableOpacity>
       <TextInput
         placeholder="Sample text input placeholder"
         value={this.state.TextInput_4}
@@ -36,12 +43,11 @@ export default class Blank extends React.Component {
       />
       <TextInput
         placeholder="Sample text input placeholder"
-        multiline={true}
+        style={styles.TextInput_5}
         value={this.state.TextInput_5}
         onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
       />
       <Switch
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
         value={this.state.Switch_6}
         onValueChange={nextChecked => this.setState({ Switch_6: nextChecked })}
       />
@@ -54,10 +60,17 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
   Button_2: {},
   Text_3: {},
   TextInput_4: {},
   TextInput_5: {},
+  Switch_6: {},
+  View_1: {},
+  Button_2: {},
+  Text_3: {},
+  TextInput_4: {},
+  TextInput_5: { height: 100 },
   Switch_6: {}
 })
