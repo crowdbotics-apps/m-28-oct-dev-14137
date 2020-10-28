@@ -61,5 +61,10 @@ const styles = StyleSheet.create({
   Button_2: {},
   Switch_3: {},
   CheckBox_4: {},
+  TextInput_5: {},
+  View_1: {},
+  Button_2: {},
+  Switch_3: {},
+  CheckBox_4: {},
   TextInput_5: {}
 })
