@@ -29,7 +29,6 @@ export default class Blank extends React.Component {
     <View>
       <Button title="Press me!" onPress={() => alert("Pressed!")} />
       <Switch
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
         value={this.state.Switch_3}
         onValueChange={nextChecked => this.setState({ Switch_3: nextChecked })}
       />
@@ -40,7 +39,6 @@ export default class Blank extends React.Component {
       />
       <TextInput
         placeholder="Number Input Placeholder"
-        keyboardType="numeric"
         value={this.state.TextInput_5}
         onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
       />
@@ -53,6 +51,12 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
+  View_1: {},
+  Button_2: {},
+  Switch_3: {},
+  CheckBox_4: {},
+  TextInput_5: {},
   View_1: {},
   Button_2: {},
   Switch_3: {},
