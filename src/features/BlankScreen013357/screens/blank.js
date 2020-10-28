@@ -27,7 +27,10 @@ export default class Blank extends React.Component {
 
   render = () => (
     <View>
-      <Button title="Press me!" onPress={() => alert("Pressed!")} />
+      <Button
+        title="Press me!"
+        onPress={() => this.props.navigation.navigate("BlankScreen113358")}
+      />
       <Switch
         value={this.state.Switch_3}
         onValueChange={nextChecked => this.setState({ Switch_3: nextChecked })}
@@ -52,6 +55,11 @@ const styles = StyleSheet.create({
     marginHorizontal: 16
   },
 
+  View_1: {},
+  Button_2: {},
+  Switch_3: {},
+  CheckBox_4: {},
+  TextInput_5: {},
   View_1: {},
   Button_2: {},
   Switch_3: {},
