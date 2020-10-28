@@ -31,11 +31,16 @@ export default class Blank extends React.Component {
         title="Press me!"
         onPress={() => this.props.navigation.navigate("BlankScreen113356")}
       />
-      <Switch
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
-        value={this.state.Switch_3}
-        onValueChange={nextChecked => this.setState({ Switch_3: nextChecked })}
-      />
+      <TouchableOpacity
+        onPress={() => this.props.navigation.navigate("BlankScreen113356")}
+      >
+        <Switch
+          value={this.state.Switch_3}
+          onValueChange={nextChecked =>
+            this.setState({ Switch_3: nextChecked })
+          }
+        />
+      </TouchableOpacity>
       <CheckBox
         title="Checkbox"
         checked={this.state.CheckBox_4}
@@ -43,7 +48,6 @@ export default class Blank extends React.Component {
       />
       <TextInput
         placeholder="Number Input Placeholder"
-        keyboardType="numeric"
         value={this.state.TextInput_5}
         onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
       />
@@ -56,6 +60,12 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
+  View_1: {},
+  Button_2: {},
+  Switch_3: {},
+  CheckBox_4: {},
+  TextInput_5: {},
   View_1: {},
   Button_2: {},
   Switch_3: {},
